@@ -1,0 +1,1949 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+      content="Sangareddy District FLN Base Line Test School Reports. Search school reports using School Name or UDISE Code.">
+
+<meta name="robots"
+      content="index, follow">
+
+<title>
+Sangareddy District FLN Base Line Test – School Reports
+</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+<style>
+
+/* =========================================================
+   BASIC RESET
+========================================================= */
+
+*{
+    box-sizing:border-box;
+}
+
+html{
+    margin:0;
+    padding:0;
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    padding:0;
+    width:100%;
+    min-width:0;
+
+    background:#f3f6fa;
+
+    color:#1e293b;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    overflow-x:hidden;
+}
+
+
+/* =========================================================
+   MAIN PAGE
+========================================================= */
+
+.page{
+    width:100%;
+    max-width:900px;
+
+    margin:0 auto;
+
+    padding:18px;
+}
+
+
+/* =========================================================
+   MAIN CARD
+========================================================= */
+
+.main-card{
+    width:100%;
+
+    background:#ffffff;
+
+    border:1px solid #e2e8f0;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    box-shadow:
+        0 6px 25px rgba(15,23,42,0.08);
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.header{
+    width:100%;
+
+    text-align:center;
+
+    padding:2px 0 22px;
+}
+
+.school-icon{
+    width:70px;
+    height:70px;
+
+    margin:0 auto 13px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0D47A1,
+            #1565C0
+        );
+
+    color:#ffffff;
+
+    font-size:29px;
+
+    box-shadow:
+        0 6px 18px
+        rgba(13,71,161,0.22);
+}
+
+.header h1{
+    margin:0;
+
+    color:#174a8b;
+
+    font-size:26px;
+
+    line-height:1.35;
+
+    font-weight:700;
+}
+
+.header p{
+    margin:8px 0 0;
+
+    color:#64748b;
+
+    font-size:14px;
+
+    line-height:1.5;
+}
+
+
+/* =========================================================
+   SEARCH SECTION
+========================================================= */
+
+.search-box{
+    width:100%;
+
+    padding:19px;
+
+    background:#f8fafc;
+
+    border:1px solid #e2e8f0;
+
+    border-radius:17px;
+}
+
+.search-title{
+    margin-bottom:11px;
+
+    color:#174a8b;
+
+    font-size:17px;
+
+    font-weight:700;
+}
+
+.search-title i{
+    margin-right:5px;
+}
+
+
+/* =========================================================
+   SEARCH INPUT
+========================================================= */
+
+.input-container{
+    position:relative;
+
+    width:100%;
+}
+
+.search-input{
+    width:100%;
+
+    height:52px;
+
+    padding:
+        0
+        46px
+        0
+        15px;
+
+    border:2px solid #d3dce7;
+
+    border-radius:11px;
+
+    background:#ffffff;
+
+    color:#1e293b;
+
+    font-size:16px;
+
+    outline:none;
+
+    transition:all .2s;
+}
+
+.search-input:focus{
+    border-color:#1565C0;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(21,101,192,0.10);
+}
+
+.search-input::placeholder{
+    color:#94a3b8;
+}
+
+.clear-input{
+    position:absolute;
+
+    right:8px;
+    top:8px;
+
+    width:36px;
+    height:36px;
+
+    display:none;
+
+    align-items:center;
+    justify-content:center;
+
+    border:0;
+
+    border-radius:8px;
+
+    background:#edf1f5;
+
+    color:#64748b;
+
+    cursor:pointer;
+}
+
+.clear-input:hover{
+    background:#e2e8f0;
+}
+
+
+/* =========================================================
+   SEARCH BUTTONS
+========================================================= */
+
+.button-row{
+    display:flex;
+
+    gap:9px;
+
+    margin-top:10px;
+}
+
+.search-button{
+    flex:1;
+
+    height:48px;
+
+    border:0;
+
+    border-radius:10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0D47A1,
+            #1565C0
+        );
+
+    color:#ffffff;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:all .2s;
+}
+
+.search-button:hover{
+    box-shadow:
+        0 6px 15px
+        rgba(13,71,161,0.22);
+}
+
+.search-button:active{
+    transform:scale(.98);
+}
+
+.clear-button{
+    height:48px;
+
+    padding:0 19px;
+
+    border:0;
+
+    border-radius:10px;
+
+    background:#e7edf4;
+
+    color:#334155;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    cursor:pointer;
+}
+
+.clear-button:hover{
+    background:#dce3ec;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.status{
+    display:none;
+
+    margin-top:12px;
+
+    padding:11px 13px;
+
+    border-radius:9px;
+
+    font-size:14px;
+
+    line-height:1.5;
+}
+
+.status.success{
+    display:block;
+
+    background:#ecfdf3;
+
+    color:#166534;
+
+    border:1px solid #bbf7d0;
+}
+
+.status.error{
+    display:block;
+
+    background:#fef2f2;
+
+    color:#b91c1c;
+
+    border:1px solid #fecaca;
+}
+
+
+/* =========================================================
+   RESULTS
+========================================================= */
+
+.results{
+    width:100%;
+
+    margin-top:17px;
+}
+
+.result-card{
+    width:100%;
+
+    margin-bottom:12px;
+
+    padding:17px;
+
+    background:#ffffff;
+
+    border:1px solid #dce5ef;
+
+    border-left:
+        4px solid #1565C0;
+
+    border-radius:13px;
+
+    box-shadow:
+        0 3px 12px
+        rgba(15,23,42,0.05);
+}
+
+.result-school{
+    color:#174a8b;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    line-height:1.45;
+
+    word-break:break-word;
+}
+
+.result-school i{
+    margin-right:5px;
+}
+
+.result-udise{
+    margin-top:7px;
+
+    color:#475569;
+
+    font-size:14px;
+}
+
+.result-file{
+    margin-top:5px;
+
+    color:#64748b;
+
+    font-size:12px;
+
+    line-height:1.5;
+
+    word-break:break-all;
+}
+
+.open-report{
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    gap:7px;
+
+    margin-top:13px;
+
+    padding:10px 16px;
+
+    border-radius:9px;
+
+    background:#1565C0;
+
+    color:#ffffff;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    transition:all .2s;
+}
+
+.open-report:hover{
+    background:#0D47A1;
+}
+
+.open-report:active{
+    transform:scale(.98);
+}
+
+
+/* =========================================================
+   MESSAGE BOX
+========================================================= */
+
+.message-box{
+    width:100%;
+
+    padding:25px 15px;
+
+    text-align:center;
+
+    background:#f8fafc;
+
+    border:
+        1px dashed #cbd5e1;
+
+    border-radius:13px;
+
+    color:#64748b;
+
+    font-size:14px;
+
+    line-height:1.6;
+}
+
+.message-box i{
+    margin-bottom:8px;
+
+    color:#94a3b8;
+
+    font-size:28px;
+}
+
+
+/* =========================================================
+   INFORMATION SECTION
+========================================================= */
+
+.information{
+    width:100%;
+
+    margin-top:27px;
+}
+
+.information-title{
+    margin:0 0 13px;
+
+    color:#174a8b;
+
+    font-size:20px;
+
+    line-height:1.4;
+}
+
+.info-card{
+    width:100%;
+
+    margin-bottom:11px;
+
+    padding:17px;
+
+    background:#f8fafc;
+
+    border:1px solid #e2e8f0;
+
+    border-radius:13px;
+}
+
+.info-card h3{
+    margin:0 0 7px;
+
+    color:#1565C0;
+
+    font-size:16px;
+
+    line-height:1.45;
+}
+
+.info-card p{
+    margin:0;
+
+    color:#475569;
+
+    font-size:14px;
+
+    line-height:1.65;
+}
+
+
+/* =========================================================
+   NOTE
+========================================================= */
+
+.note-box{
+    width:100%;
+
+    margin:13px 0;
+
+    padding:15px;
+
+    background:#fff7ed;
+
+    border-left:
+        4px solid #f97316;
+
+    border-radius:10px;
+
+    color:#7c2d12;
+
+    font-size:14px;
+
+    line-height:1.6;
+}
+
+
+/* =========================================================
+   TIP
+========================================================= */
+
+.tip-box{
+    width:100%;
+
+    margin:13px 0;
+
+    padding:15px;
+
+    background:#ecfdf5;
+
+    border-left:
+        4px solid #10b981;
+
+    border-radius:10px;
+
+    color:#065f46;
+
+    font-size:14px;
+
+    line-height:1.6;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.portal-footer{
+    width:100%;
+
+    margin-top:18px;
+
+    padding:
+        28px
+        16px
+        21px;
+
+    text-align:center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0D47A1,
+            #1565C0
+        );
+
+    color:#ffffff;
+
+    border-radius:18px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(13,71,161,0.15);
+}
+
+.portal-title{
+    font-size:20px;
+
+    font-weight:700;
+
+    line-height:1.4;
+}
+
+.portal-subtitle{
+    margin-top:6px;
+
+    font-size:13px;
+
+    line-height:1.5;
+
+    opacity:.92;
+}
+
+.social-links{
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:8px;
+
+    margin-top:18px;
+}
+
+.social-links a{
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    gap:6px;
+
+    min-height:40px;
+
+    padding:0 12px;
+
+    border-radius:9px;
+
+    background:
+        rgba(255,255,255,.13);
+
+    color:#ffffff;
+
+    text-decoration:none;
+
+    font-size:13px;
+
+    transition:all .2s;
+}
+
+.social-links a:hover{
+    background:
+        rgba(255,255,255,.24);
+
+    transform:translateY(-1px);
+}
+
+.back-top{
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    gap:7px;
+
+    margin-top:19px;
+
+    padding:10px 16px;
+
+    border-radius:9px;
+
+    background:#ffffff;
+
+    color:#0D47A1;
+
+    text-decoration:none;
+
+    font-size:13px;
+
+    font-weight:700;
+}
+
+.copyright{
+    margin-top:17px;
+
+    padding-top:13px;
+
+    border-top:
+        1px solid
+        rgba(255,255,255,.20);
+
+    font-size:11px;
+
+    opacity:.9;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:600px){
+
+    .page{
+        width:100%;
+
+        padding:7px;
+    }
+
+    .main-card{
+        padding:15px;
+
+        border-radius:17px;
+    }
+
+    .school-icon{
+        width:60px;
+        height:60px;
+
+        font-size:25px;
+    }
+
+    .header{
+        padding-bottom:17px;
+    }
+
+    .header h1{
+        font-size:21px;
+    }
+
+    .header p{
+        font-size:13px;
+    }
+
+    .search-box{
+        padding:14px;
+
+        border-radius:14px;
+    }
+
+    .search-title{
+        font-size:16px;
+    }
+
+    .result-card{
+        padding:14px;
+    }
+
+    .result-school{
+        font-size:16px;
+    }
+
+    .information-title{
+        font-size:18px;
+    }
+
+    .info-card{
+        padding:14px;
+    }
+
+    .portal-footer{
+        padding:
+            23px
+            12px
+            18px;
+
+        border-radius:15px;
+    }
+
+    .portal-title{
+        font-size:17px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media(max-width:380px){
+
+    .button-row{
+        flex-direction:column;
+    }
+
+    .search-button,
+    .clear-button{
+        width:100%;
+    }
+
+    .social-links a{
+        width:100%;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="page">
+
+
+<!-- =======================================================
+     MAIN CARD
+======================================================= -->
+
+<div class="main-card">
+
+
+<!-- =======================================================
+     HEADER
+======================================================= -->
+
+<div class="header">
+
+<div class="school-icon">
+
+<i class="fa-solid fa-school"></i>
+
+</div>
+
+
+<h1>
+
+Sangareddy District FLN Base Line Test
+– School Reports
+
+</h1>
+
+
+<p>
+
+Search school reports using School Name or UDISE Code
+
+</p>
+
+</div>
+
+
+<!-- =======================================================
+     SEARCH BOX
+======================================================= -->
+
+<div class="search-box">
+
+
+<div class="search-title">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+Search for a School Report
+
+</div>
+
+
+<div class="input-container">
+
+
+<input
+
+type="text"
+
+id="searchInput"
+
+class="search-input"
+
+placeholder="Enter School Name or UDISE Code"
+
+autocomplete="off"
+
+spellcheck="false"
+
+aria-label="Search School Name or UDISE Code"
+
+>
+
+
+<button
+
+type="button"
+
+id="clearInput"
+
+class="clear-input"
+
+aria-label="Clear search"
+
+>
+
+<i class="fa-solid fa-xmark"></i>
+
+</button>
+
+
+</div>
+
+
+<div class="button-row">
+
+
+<button
+
+type="button"
+
+id="searchButton"
+
+class="search-button"
+
+>
+
+<i class="fa-solid fa-search"></i>
+
+Search
+
+</button>
+
+
+<button
+
+type="button"
+
+id="clearButton"
+
+class="clear-button"
+
+>
+
+<i class="fa-solid fa-xmark"></i>
+
+Clear
+
+</button>
+
+
+</div>
+
+
+<div
+
+id="status"
+
+class="status">
+
+</div>
+
+
+</div>
+
+
+<!-- =======================================================
+     SEARCH RESULTS
+======================================================= -->
+
+<div
+
+id="results"
+
+class="results">
+
+
+<div class="message-box">
+
+<i class="fa-solid fa-school"></i>
+
+<br>
+
+Enter a School Name or UDISE Code to search.
+
+</div>
+
+
+</div>
+
+
+<!-- =======================================================
+     INFORMATION
+======================================================= -->
+
+<div class="information">
+
+
+<h2 class="information-title">
+
+📚 Sangareddy District FLN Base Line Test
+– School Report
+
+</h2>
+
+
+<div class="info-card">
+
+<h3>
+
+🔎 How to Search for a School Report
+
+</h3>
+
+<p>
+
+Enter the <strong>School Name</strong> or
+<strong>UDISE Code</strong> in the search box
+and click <strong>Search</strong>.
+The matching school report will be displayed below.
+
+</p>
+
+</div>
+
+
+<div class="info-card">
+
+<h3>
+
+🏫 What is an FLN Base Line Test?
+
+</h3>
+
+<p>
+
+The Foundational Literacy and Numeracy
+(FLN) Base Line Test helps schools understand
+the existing learning levels of students in
+foundational literacy and numeracy.
+
+</p>
+
+</div>
+
+
+<div class="info-card">
+
+<h3>
+
+📊 Purpose of the School Report
+
+</h3>
+
+<p>
+
+The school report provides a record of Base
+Line Test results and can support academic
+planning, classroom activities and monitoring
+of foundational learning.
+
+</p>
+
+</div>
+
+
+<div class="info-card">
+
+<h3>
+
+👩‍🏫 Useful for Teachers and Schools
+
+</h3>
+
+<p>
+
+Teachers and school staff can use these reports
+for academic planning, reference, monitoring
+learning progress and maintaining school-level
+records.
+
+</p>
+
+</div>
+
+
+<div class="info-card">
+
+<h3>
+
+📱 Easy Access
+
+</h3>
+
+<p>
+
+Reports can be searched from a mobile phone,
+tablet, laptop or desktop computer.
+No separate application is required.
+
+</p>
+
+</div>
+
+
+<div class="note-box">
+
+<strong>⚠️ Important Note:</strong>
+
+<br>
+
+Please enter the correct School Name or UDISE
+Code. The report opens directly from the
+corresponding school report file.
+
+</div>
+
+
+<div class="tip-box">
+
+<strong>💡 Useful Tip:</strong>
+
+<br>
+
+If you know the UDISE Code, enter the complete
+UDISE Code for the quickest and most accurate
+search.
+
+</div>
+
+
+<div class="info-card">
+
+<h3>
+
+🔐 Privacy and Responsible Use
+
+</h3>
+
+<p>
+
+These reports should be used only for legitimate
+educational, academic and administrative
+purposes. Please handle student-related
+information responsibly.
+
+</p>
+
+</div>
+
+
+<div class="info-card">
+
+<h3>
+
+📖 About This Resource
+
+</h3>
+
+<p>
+
+This resource provides a convenient search
+interface for accessing Sangareddy District
+FLN Base Line Test school reports.
+
+</p>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+<!-- =======================================================
+     FOOTER
+======================================================= -->
+
+<div class="portal-footer">
+
+
+<div class="portal-title">
+
+TELANGANA EMPLOYEE UTILITY PORTAL
+
+</div>
+
+
+<div class="portal-subtitle">
+
+Employee Utility Portal • Calculators • FLN • FLS • TG TET
+
+</div>
+
+
+<div class="social-links">
+
+
+<a
+
+href="https://whatsapp.com/channel/0029VbBrgaQ5a240DjLU0o0N"
+
+target="_blank"
+
+rel="noopener noreferrer"
+
+>
+
+<i class="fa-brands fa-whatsapp"></i>
+
+WhatsApp
+
+</a>
+
+
+<a
+
+href="https://t.me/Tgemployeeutiltyportal"
+
+target="_blank"
+
+rel="noopener noreferrer"
+
+>
+
+<i class="fa-brands fa-telegram"></i>
+
+Telegram
+
+</a>
+
+
+<a
+
+href="https://employeetg.blogspot.com/p/dashboard.html"
+
+target="_blank"
+
+rel="noopener noreferrer"
+
+>
+
+<i class="fa-solid fa-house"></i>
+
+Home
+
+</a>
+
+
+<a
+
+href="mailto:telanganaemployeeutilityportal@gmail.com"
+
+>
+
+<i class="fa-solid fa-envelope"></i>
+
+Email
+
+</a>
+
+
+<a
+
+href="https://employeetg.blogspot.com/p/contact.html"
+
+target="_blank"
+
+rel="noopener noreferrer"
+
+>
+
+<i class="fa-solid fa-address-card"></i>
+
+Contact
+
+</a>
+
+
+</div>
+
+
+<a
+
+href="#top"
+
+class="back-top"
+
+>
+
+<i class="fa-solid fa-arrow-up"></i>
+
+Back to Top
+
+</a>
+
+
+<div class="copyright">
+
+© 2026 Telangana Employee Utility Portal
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+<!-- =======================================================
+     JAVASCRIPT
+======================================================= -->
+
+<script>
+
+"use strict";
+
+
+/* =========================================================
+   VARIABLES
+========================================================= */
+
+let reports = [];
+
+
+const searchInput =
+document.getElementById("searchInput");
+
+
+const searchButton =
+document.getElementById("searchButton");
+
+
+const clearButton =
+document.getElementById("clearButton");
+
+
+const clearInput =
+document.getElementById("clearInput");
+
+
+const results =
+document.getElementById("results");
+
+
+const status =
+document.getElementById("status");
+
+
+/* =========================================================
+   LOAD REPORTS.JSON
+========================================================= */
+
+async function loadReports(){
+
+    try{
+
+        const response =
+        await fetch(
+            "reports.json",
+            {
+                cache:"no-store"
+            }
+        );
+
+
+        if(!response.ok){
+
+            throw new Error(
+                "reports.json could not be loaded"
+            );
+
+        }
+
+
+        const data =
+        await response.json();
+
+
+        if(!Array.isArray(data)){
+
+            throw new Error(
+                "Invalid reports.json format"
+            );
+
+        }
+
+
+        reports = data;
+
+
+        results.innerHTML = `
+
+            <div class="message-box">
+
+                <i class="fa-solid fa-school"></i>
+
+                <br>
+
+                Enter a School Name or UDISE Code
+                to search.
+
+            </div>
+
+        `;
+
+
+    }
+
+    catch(error){
+
+        console.error(error);
+
+
+        results.innerHTML = `
+
+            <div class="message-box">
+
+                <i class="fa-solid fa-triangle-exclamation"></i>
+
+                <br>
+
+                <strong>
+                Could not load the report index.
+                </strong>
+
+                <br><br>
+
+                Please make sure
+                <strong>reports.json</strong>
+                is in the repository root.
+
+            </div>
+
+        `;
+
+
+        showStatus(
+            "Unable to load the school report list.",
+            "error"
+        );
+
+    }
+
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+function showStatus(message,type){
+
+    status.className =
+        "status " + type;
+
+    status.innerHTML =
+        message;
+
+}
+
+
+function hideStatus(){
+
+    status.className =
+        "status";
+
+    status.style.display =
+        "none";
+
+}
+
+
+/* =========================================================
+   SEARCH REPORTS
+========================================================= */
+
+function searchReports(){
+
+    const query =
+        searchInput.value
+        .trim()
+        .toLowerCase();
+
+
+    /* EMPTY SEARCH */
+
+    if(!query){
+
+        results.innerHTML = `
+
+            <div class="message-box">
+
+                <i class="fa-solid fa-keyboard"></i>
+
+                <br>
+
+                Please enter a School Name
+                or UDISE Code.
+
+            </div>
+
+        `;
+
+        hideStatus();
+
+        return;
+
+    }
+
+
+    /* REPORT DATA NOT LOADED */
+
+    if(!reports.length){
+
+        results.innerHTML = `
+
+            <div class="message-box">
+
+                <i class="fa-solid fa-database"></i>
+
+                <br>
+
+                Report data is not available.
+
+            </div>
+
+        `;
+
+        return;
+
+    }
+
+
+    /* FIND MATCHES */
+
+    const matches =
+        reports.filter(
+            function(item){
+
+                const schoolName =
+                    String(
+                        item.schoolName || ""
+                    ).toLowerCase();
+
+
+                const udise =
+                    String(
+                        item.udise || ""
+                    ).toLowerCase();
+
+
+                const fileName =
+                    String(
+                        item.fileName || ""
+                    ).toLowerCase();
+
+
+                return(
+
+                    schoolName.includes(query)
+
+                    ||
+
+                    udise.includes(query)
+
+                    ||
+
+                    fileName.includes(query)
+
+                );
+
+            }
+        );
+
+
+    /* NO MATCH */
+
+    if(!matches.length){
+
+        results.innerHTML = `
+
+            <div class="message-box">
+
+                <i class="fa-solid fa-file-circle-xmark"></i>
+
+                <br>
+
+                <strong>
+                No matching school report found.
+                </strong>
+
+                <br><br>
+
+                Try another School Name
+                or UDISE Code.
+
+            </div>
+
+        `;
+
+
+        showStatus(
+            "No matching school report found.",
+            "error"
+        );
+
+
+        return;
+
+    }
+
+
+    /* MATCH FOUND */
+
+    showStatus(
+
+        "<strong>" +
+        matches.length +
+        "</strong> matching report(s) found.",
+
+        "success"
+
+    );
+
+
+    /* CREATE RESULT CARDS */
+
+    results.innerHTML =
+
+        matches
+        .map(
+            function(item){
+
+                const schoolName =
+                    escapeHTML(
+                        item.schoolName || ""
+                    );
+
+
+                const udise =
+                    escapeHTML(
+                        item.udise || ""
+                    );
+
+
+                const fileName =
+                    escapeHTML(
+                        item.fileName || ""
+                    );
+
+
+                /*
+                 * The file path comes from reports.json.
+                 *
+                 * Example:
+                 *
+                 * reports/School_36160501101_MPPS_GONDEGAON_Report (1).pdf
+                 */
+
+                const filePath =
+                    encodeURI(
+                        item.file || ""
+                    );
+
+
+                return `
+
+                    <div class="result-card">
+
+
+                        <div class="result-school">
+
+                            <i class="fa-solid fa-school"></i>
+
+                            ${schoolName}
+
+                        </div>
+
+
+                        <div class="result-udise">
+
+                            <strong>
+                            UDISE Code:
+                            </strong>
+
+                            ${udise}
+
+                        </div>
+
+
+                        <div class="result-file">
+
+                            <strong>
+                            Report File:
+                            </strong>
+
+                            <br>
+
+                            ${fileName}
+
+                        </div>
+
+
+                        <a
+
+                            class="open-report"
+
+                            href="${filePath}"
+
+                            target="_blank"
+
+                            rel="noopener noreferrer"
+
+                        >
+
+                            <i class="fa-solid fa-file-pdf"></i>
+
+                            Open Report
+
+                        </a>
+
+
+                    </div>
+
+                `;
+
+            }
+        )
+        .join("");
+
+}
+
+
+/* =========================================================
+   HTML SECURITY
+========================================================= */
+
+function escapeHTML(value){
+
+    return String(value)
+
+        .replace(
+            /&/g,
+            "&amp;"
+        )
+
+        .replace(
+            /</g,
+            "&lt;"
+        )
+
+        .replace(
+            />/g,
+            "&gt;"
+        )
+
+        .replace(
+            /"/g,
+            "&quot;"
+        )
+
+        .replace(
+            /'/g,
+            "&#039;"
+        );
+
+}
+
+
+/* =========================================================
+   CLEAR SEARCH
+========================================================= */
+
+function clearSearch(){
+
+    searchInput.value =
+        "";
+
+    clearInput.style.display =
+        "none";
+
+    hideStatus();
+
+
+    results.innerHTML = `
+
+        <div class="message-box">
+
+            <i class="fa-solid fa-school"></i>
+
+            <br>
+
+            Enter a School Name or UDISE Code
+            to search.
+
+        </div>
+
+    `;
+
+
+    searchInput.focus();
+
+}
+
+
+/* =========================================================
+   SHOW/HIDE X BUTTON
+========================================================= */
+
+searchInput.addEventListener(
+    "input",
+    function(){
+
+        if(
+            this.value.trim()
+        ){
+
+            clearInput.style.display =
+                "flex";
+
+        }
+
+        else{
+
+            clearInput.style.display =
+                "none";
+
+        }
+
+    }
+);
+
+
+/* =========================================================
+   SEARCH BUTTON
+========================================================= */
+
+searchButton.addEventListener(
+    "click",
+    searchReports
+);
+
+
+/* =========================================================
+   CLEAR BUTTON
+========================================================= */
+
+clearButton.addEventListener(
+    "click",
+    clearSearch
+);
+
+
+/* =========================================================
+   INPUT X BUTTON
+========================================================= */
+
+clearInput.addEventListener(
+    "click",
+    clearSearch
+);
+
+
+/* =========================================================
+   ENTER KEY
+========================================================= */
+
+searchInput.addEventListener(
+    "keydown",
+    function(event){
+
+        if(
+            event.key === "Enter"
+        ){
+
+            event.preventDefault();
+
+            searchReports();
+
+        }
+
+    }
+);
+
+
+/* =========================================================
+   LOAD DATA WHEN PAGE OPENS
+========================================================= */
+
+loadReports();
+
+</script>
+
+
+</body>
+</html>
